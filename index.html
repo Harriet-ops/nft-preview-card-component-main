@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+    *{
+      font-family: 'Outfit',sans-serif;
+    }
+
+    body{
+      background-color: hsl(217, 54%, 11%);
+      justify-items: center;
+
+    }
+
+
+
+    main{
+      width: 350px;
+      height:610px;
+      background-color:hsl(216, 50%, 16%) ;
+      position:relative;
+      top: 100px;
+      border-radius: 3%;
+    }
+
+
+    .attribution{
+      position: relative;
+      top: 160px;
+    }
+
+    .container img{
+      display: block;
+      width: 85%;
+      position: relative;
+      top: 20px;
+      left: 25px;
+      border-radius: 5%;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .equi a{
+      position: relative;
+      top: 40px;
+      left: 25px;
+      color: white;
+      font-size: 23px;
+      font-weight: 600;
+      text-decoration: none;
+
+    }
+    .equi p{
+      position: relative;
+      top: 50px;
+      left: 20px;
+      color: white;
+      font-weight: 400;
+      font-size: 20px;
+      color: hsl(218, 19%, 52%);
+    }
+
+    .eth{
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    #icon{
+      position: relative;
+      top: 40px;
+      left: 20px;
+    }
+
+    #amount{
+      position: relative;
+      top: 40px;
+      left: 20px;
+      color: hsl(178, 100%, 50%);
+      
+    } 
+
+    #days{
+      position: relative;
+      top:40px ;
+      left: 120px;
+      font-size: 18px;
+      color: hsl(218, 19%, 52%);
+      word-spacing:1px;
+    }
+    
+    #clock{
+      position: relative;
+      top: 40px;
+      left: 120px; 
+      
+    }
+
+    .line {
+      width: 90%;
+      height: 0.05%;
+      background-color:hsl(218, 25%, 30%);
+      position: relative;
+      top: 50px;
+      left: 20px;
+
+    }  
+
+  #photo{
+    width: 40px;
+    position: relative;
+    top: 60px;
+    left: 20px;  
+
+  }
+
+  .profile{
+    display: flex;
+    align-items: center;
+  }
+
+  .profile p{
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: 30px;
+
+  }
+  
+  #name{
+   color: hsl(218, 19%, 52%);
+  }
+
+  .profile a{
+    color: white;
+    margin-left: 10px;
+    position: relative;
+    top: 51px;
+    left: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .profile a:hover{
+    color: cyan;
+
+  }
+
+  a:hover{
+    color: hsl(178, 100%, 50%);;
+
+  }
+
+
+
+
+  </style>
+</head>
+
+
+<body>
+  <main>
+    <div class="container">
+      <a href="#" class="hover">
+        <img src="images/image-equilibrium.jpg" alt="equilibrium-image">
+      </a>
+    
+    </div>
+    
+
+
+    <div class="equi">
+      <a href="#" >Equilibrium #3429</a>
+    
+      <p>Our Equilibrium collection promotes<br> balance and calm.</p>
+    </div>
+
+    <div class="eth">
+      <img src="images/icon-ethereum.svg" alt="icon-ethereum" id="icon">
+      <p id="amount">0.041 ETH</p>
+
+      <img src="images/icon-clock.svg" alt="icon-clock" id="clock">
+      <p id="days">3 days left</p>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="profile">
+      <img src="images/image-avatar.png" id="photo" alt="profile-pic">
+      <p id="name">Creation of </p> <a href="person"> Jules Wyvren</p>
+    </div> 
+
+    
+
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Harriet Affoah Koranteng.</a>.
+  </div>
+</body>
+</html>
