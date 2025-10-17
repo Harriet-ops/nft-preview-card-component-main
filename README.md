@@ -25,7 +25,7 @@ This is a solution to the [Nft preview card challenge on Frontend Mentor](https:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: 
+- Live Site URL: https://nft-preview-card-component-main-phi-nine.vercel.app/
 
 ## My process
 
