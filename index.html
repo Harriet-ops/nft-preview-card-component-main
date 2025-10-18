@@ -33,7 +33,7 @@
       height:610px;
       background-color:hsl(216, 50%, 16%) ;
       position:relative;
-      top: 100px;
+      top: 95px;
       border-radius: 3%;
     }
 
@@ -41,6 +41,10 @@
     .attribution{
       position: relative;
       top: 160px;
+    }
+
+    .container{
+      position: relative;
     }
 
     .container img{
@@ -52,6 +56,37 @@
       border-radius: 5%;
       overflow: hidden;
       transition: all 0.3s ease;
+    }
+
+
+    .overlay-img{
+      position: absolute;
+      top: 20px;
+      left: 25px;
+      width: 85%;
+      height: 100%;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 5%;
+      background-color: rgba(0, 255, 255, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay-img img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      filter: brightness(0) invert(1);
+    }
+
+    .container:hover .overlay-img{
+      opacity: 1;
     }
 
     .equi a{
@@ -149,7 +184,7 @@
     color: white;
     margin-left: 10px;
     position: relative;
-    top: 51px;
+    top: 60px;
     left: 30px;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -165,6 +200,9 @@
 
   }
 
+  
+ 
+
 
 
 
@@ -175,10 +213,10 @@
 <body>
   <main>
     <div class="container">
-      <a href="#" class="hovering">
-        <img src="images/image-equilibrium.jpg" alt="equilibrium-image">
-      </a>
-    
+        <img src="images/image-equilibrium.jpg" alt="equilibrium-image" class="equilibrium-img">
+        <div class="overlay-img">
+          <img src="images/icon-view.svg" alt="overlay-image">
+        </div>
     </div>
     
 
@@ -201,7 +239,7 @@
 
     <div class="profile">
       <img src="images/image-avatar.png" id="photo" alt="profile-pic">
-      <p id="name">Creation of </p> <a href="#"> Jules Wyvren</p>
+      <p id="name">Creation of </p> <a href="#"> Jules Wyvren</a>
     </div> 
 
     
